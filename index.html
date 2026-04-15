@@ -1,96 +1,122 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<title>Виртуальный тур по МКОУ "Нехаевская СШ"</title>
-		<link rel="stylesheet" href="main.css">
-		<meta name="description" content="Проектная работа учеников 11 класса" />
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <title>Виртуальный тур</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="На главную">
+        <img class="brand__logo" src="1.png" alt="Логотип">
+        <div class="brand__text">
+          <span class="brand__eyebrow">Виртуальный тур</span>
+          <span class="brand__title">Панорамный обзор пространства</span>
+        </div>
+      </a>
 
-		<meta name="keywords" content="Проектная работа учеников 11 класса" />
-		<meta name="generator" content="Проектная работа учеников 11 класса" />
-		<link rel="shortcut icon" type="image/png" href="img.png"/>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
+      <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+        <a href="#tour">Тур</a>
+        <a href="#about">О проекте</a>
+        <a href="#tips">Как смотреть</a>
+      </nav>
+    </header>
 
-		<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-		<meta name="apple-mobile-web-app-capable" content="yes"/>
-		<meta name="apple-mobile-web-app-status-bar-style" content="default">
-		<!--[if !IE]><!-->
-		<script type="text/javascript" src="finaldata/lib/jquery-2.0.3.min.js"></script>
-		<!--<![endif]-->
-		<!--[if lte IE 8]>
-		<script type="text/javascript" src="finaldata/lib/jquery-1.10.2.min.js"></script>
-		<![endif]-->
-		<!--[if gt IE 8]>
-		<script type="text/javascript" src="finaldata/lib/jquery-2.0.3.min.js"></script>
-		<![endif]-->
-		
-		<script type="text/javascript">
-		function readDeviceOrientation() {
-			// window.innerHeight is not supported by IE
-			var winH = window.innerHeight ? window.innerHeight : jQuery(window).height();
-			var winW = window.innerWidth ? window.innerWidth : jQuery(window).width();
-			//force height for iframe usage
-			if(!winH || winH == 0){
-				winH = '100%';
-			}
-			// set the height of the document
-			jQuery('html').css('height', winH);
-			// scroll to top
-			window.scrollTo(0,0);
-		}
-		jQuery( document ).ready(function( jQuery ) {
-			if (/(iphone|ipod|ipad|android|iemobile|webos|fennec|blackberry|kindle|series60|playbook|opera\smini|opera\smobi|opera\stablet|symbianos|palmsource|palmos|blazer|windows\sce|windows\sphone|wp7|bolt|doris|dorothy|gobrowser|iris|maemo|minimo|netfront|semc-browser|skyfire|teashark|teleca|uzardweb|avantgo|docomo|kddi|ddipocket|polaris|eudoraweb|opwv|plink|plucker|pie|xiino|benq|playbook|bb|cricket|dell|bb10|nintendo|up.browser|playstation|tear|mib|obigo|midp|mobile|tablet)/.test(navigator.userAgent.toLowerCase())) {
-				// add event listener on resize event (for orientation change)
-				jQuery(window).resize(function() {
-					readDeviceOrientation();
-				});
-				// initial execution
-				readDeviceOrientation();
-			}
-		});
-		</script>
-	</head>
-	<body>
-		<div id="bar"><abbr data-title="МУНИЦИПАЛЬНОЕ КАЗЕННОЕ ОБЩЕОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ &quot;НЕХАЕВСКАЯ СРЕДНЯЯ ШКОЛА&quot; НЕХАЕВСКОГО МУНИЦИПАЛЬНОГО РАЙОНА ВОЛГОГРАДСКОЙ ОБЛАСТИ"><img id="hhh" src="img.png" alt="МУНИЦИПАЛЬНОЕ КАЗЕННОЕ ОБЩЕОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ &quot;НЕХАЕВСКАЯ СРЕДНЯЯ ШКОЛА&quot; НЕХАЕВСКОГО МУНИЦИПАЛЬНОГО РАЙОНА ВОЛГОГРАДСКОЙ ОБЛАСТИ"></abbr><p id="www">МКОУ &quot;Нехаевская СШ&quot;</p>
-			
-			<ul>
-				<a href="https://nexschool.wordpress.com/" title="Главная" ><li id="one">ГЛАВНАЯ</li></a>
-				<a href="https://nexschool.wordpress.com/блог/" title="Новости" ><li id="two">НОВОСТИ</li></a>
-				<a href="https://nexschool.wordpress.com/достижения-и-награды/" title="Достижения"><li id="three">ДОСТИЖЕНИЯ</li></a>
-				<li id="four"><a href="https://nexschool.wordpress.com/о-нас/" title="О нас">О НАС</li></a>
-				<a href="https://cloud13153.github.io/panotour/index.html" title="Виртуальный тур по школе"><li id="fifth">ВИРТУАЛЬНЫЙ ТУР ПО ШКОЛЕ</li></a>
-				<a href="https://nexschool.wordpress.com/предложить-новость/" title="Предложить новость"><li id="six">ПРЕДЛОЖИТЬ НОВОСТЬ</li></a>
-			</ul>
-			<a href="https://vk.com/public157957872" target="_blank"><img id="vk" src="1.png"></a>
-			</div>
-		<div id="container">
-			<div id="tourDIV">
-				<div id="panoDIV">
-					<noscript>
-						
-						Включите Java Script в настройках браузера для корректного отображения страницы.
-						
-					</noscript>
-				</div>
-				
-				<script type="text/javascript" src="finaldata/final.js"></script>
-				<script type="text/javascript">
-					embedpano({
-					
-					
-					xml:"finaldata/final.xml"
-					
-					
-					,target:"panoDIV"
-					,passQueryParameters:true
-					
-					,html5:"only"
-					
-					
-					});
-				</script>
-			</div>
-		</div>
-		
-	</body>
+    <main>
+      <section class="hero" id="top">
+        <div class="hero__content">
+          <p class="hero__lead">Интерактивный просмотр на компьютере и телефоне</p>
+          <h1>Откройте виртуальный тур прямо на этой странице</h1>
+          <p class="hero__text">
+            Исследуйте помещения, перемещайтесь между точками обзора и смотрите панорамы в полноэкранном режиме.
+          </p>
+
+          <div class="hero__actions">
+            <a class="button button--primary" href="#tour">Открыть тур</a>
+            <a class="button button--ghost" href="#tips">Инструкция</a>
+          </div>
+        </div>
+
+        <aside class="hero__panel" id="about">
+          <p class="panel__label">Что внутри</p>
+          <ul class="panel__list">
+            <li>Большое окно просмотра без лишних элементов</li>
+            <li>Адаптация под смартфоны и планшеты</li>
+            <li>Быстрый доступ к просмотру в полный экран</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="tour-section" id="tour">
+        <div class="section-heading">
+          <p class="section-heading__eyebrow">Основной экран</p>
+          <h2>Виртуальный тур</h2>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-card__topbar">
+            <span class="status-dot" aria-hidden="true"></span>
+            <p>Интерактивная панорама</p>
+          </div>
+
+          <div class="tour-frame-wrap">
+            <iframe
+              class="tour-frame"
+              src="tour-frame.html"
+              title="Виртуальный тур"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="tips-section" id="tips">
+        <div class="tip-card">
+          <h3>С телефона</h3>
+          <p>Поверните экран горизонтально для более удобного обзора и используйте жесты для приближения.</p>
+        </div>
+
+        <div class="tip-card">
+          <h3>С компьютера</h3>
+          <p>Зажмите левую кнопку мыши, чтобы осмотреться, и переходите между точками тура по активным меткам.</p>
+        </div>
+
+        <div class="tip-card">
+          <h3>Полный экран</h3>
+          <p>Если панорама поддерживает полноэкранный режим, включите его в интерфейсе тура для максимального погружения.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.site-nav');
+
+    toggle?.addEventListener('click', () => {
+      const opened = nav.classList.toggle('site-nav--open');
+      toggle.setAttribute('aria-expanded', String(opened));
+    });
+
+    nav?.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('site-nav--open');
+        toggle?.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
 </html>
